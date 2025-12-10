@@ -138,4 +138,19 @@
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
+
+  .page-fade {
+    animation: pageFade 260ms cubic-bezier(.22,.9,.26,1) both;
+  }
+
+  @keyframes pageFade {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

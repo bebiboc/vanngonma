@@ -6,7 +6,6 @@ interface StoreCardProps {
   name: string;
   category: string;
   image: string;
-  emoji: string;
   rating: number;
   distance: string;
   pickupTime: string;
@@ -20,7 +19,6 @@ const StoreCard = ({
   name,
   category,
   image,
-  emoji,
   rating,
   distance,
   pickupTime,
@@ -30,8 +28,10 @@ const StoreCard = ({
 }: StoreCardProps) => {
   const navigate = useNavigate();
 
+  const vnd = new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND", maximumFractionDigits: 0 });
+
   const handleClick = () => {
-    navigate("/coming-soon");
+    navigate("/coming-soon", { state: { source: `store:${id}` } });
   };
 
   return (
@@ -40,9 +40,18 @@ const StoreCard = ({
       className="group bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-card-hover transition-all duration-300 hover:-translate-y-2 text-left w-full"
     >
       <div className="relative h-40 bg-muted overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center text-6xl bg-gradient-to-br from-muted to-muted/50">
-          {emoji}
-        </div>
+        {image ? (
+          <img
+            src={image}
+            alt={name}
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center text-6xl bg-gradient-to-br from-muted to-muted/50">
+            {image}
+          </div>
+        )}
         <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-card/90 backdrop-blur-sm text-xs font-medium text-foreground">
           {category}
         </div>
@@ -79,8 +88,8 @@ const StoreCard = ({
 
         <div className="flex items-center justify-between pt-3 border-t border-border">
           <div className="flex items-baseline gap-2">
-            <span className="text-xl font-bold text-primary">${discountPrice.toFixed(2)}</span>
-            <span className="text-sm text-muted-foreground line-through">${originalPrice.toFixed(2)}</span>
+            <span className="text-xl font-bold text-primary">{vnd.format(discountPrice)}</span>
+            <span className="text-sm text-muted-foreground line-through">{vnd.format(originalPrice)}</span>
           </div>
           <span className="px-3 py-1.5 rounded-lg bg-primary/10 text-primary text-sm font-semibold">
             {Math.round((1 - discountPrice / originalPrice) * 100)}% off

@@ -1,5 +1,6 @@
 import { Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { toast } from "@/components/ui/use-toast";
 
 const Header = () => {
   return (
@@ -9,23 +10,32 @@ const Header = () => {
           <div className="w-10 h-10 rounded-xl gradient-hero flex items-center justify-center shadow-soft group-hover:shadow-glow transition-shadow duration-300">
             <Leaf className="w-5 h-5 text-primary-foreground" />
           </div>
-          <span className="text-xl font-bold text-foreground">FoodSave</span>
+          <span className="text-xl font-bold text-foreground">Vẫn Ngon Mà</span>
         </a>
         
         <nav className="hidden md:flex items-center gap-8">
           <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
-            How it works
+            Cách thức hoạt động
           </a>
           <a href="#browse" className="text-muted-foreground hover:text-foreground transition-colors">
-            Browse deals
+            Khám phá ưu đãi
           </a>
           <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-            About us
+            Về chúng tôi
           </a>
         </nav>
 
-        <Button variant="default" size="sm">
-          Get the App
+        <Button
+          variant="default"
+          size="sm"
+          onClick={() =>
+            toast({
+              title: "Chưa có - Sắp ra mắt",
+              description: "Chúng tôi đang phát triển ứng dụng và sẽ cập nhật sớm.",
+            })
+          }
+        >
+          Tải ứng dụng
         </Button>
       </div>
     </header>

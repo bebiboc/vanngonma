@@ -4,22 +4,22 @@ const values = [
   {
     icon: Sparkles,
     emoji: "🥐",
-    title: "Great food, low price",
-    description: "Enjoy delicious meals from top restaurants and bakeries at up to 70% off retail prices.",
+    title: "Giá cả siêu rẻ",
+    description: "Thưởng thức các thực phẩm ngon từ nhà hàng, tiệm bánh, siêu thị hàng đầu với giá giảm tới 70%.",
     color: "bg-secondary/10 text-secondary",
   },
   {
     icon: Leaf,
     emoji: "🌱",
-    title: "Reduce food waste effortlessly",
-    description: "Every meal you save prevents perfectly good food from ending up in landfills.",
+    title: "Cam kết cá nhân với xã hội",
+    description: "Mỗi túi thực phẩm bất ngờ bạn mua giúp ngăn những thực phẩm tươi ngon trong ngày khỏi bị vứt đi dẫn đến lãng phí.",
     color: "bg-primary/10 text-primary",
   },
   {
     icon: ShieldCheck,
     emoji: "🛍️",
-    title: "Safe & high quality",
-    description: "We partner only with verified businesses committed to food safety standards.",
+    title: "An toàn & chất lượng cao",
+    description: "Chúng tôi chỉ hợp tác với các doanh nghiệp uy tín, cam kết tiêu chuẩn an toàn thực phẩm và chất lượng.",
     color: "bg-accent text-accent-foreground",
   },
 ];
@@ -30,13 +30,13 @@ const ValueProps = () => {
       <div className="container">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full bg-accent text-accent-foreground text-sm font-medium mb-4">
-            Why FoodSave?
+            Tại sao chọn Vẫn Ngon Mà?
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Good for you, good for the planet
+            Tốt cho bạn, tốt cho xã hội
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Join thousands of food lovers making a difference one meal at a time
+            Cùng hàng trăm người yêu ẩm thực tạo nên sự thay đổi từ mỗi bữa ăn
           </p>
         </div>
 
