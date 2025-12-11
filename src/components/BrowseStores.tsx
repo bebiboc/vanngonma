@@ -47,7 +47,7 @@ const stores = [
     category: "Nhà hàng khách sạn",
     categoryId: "restaurant",
     emoji: "🥩",
-    image: "/images/stores/grill-steak.jpg",
+    image: "./images/stores/grill-steak.jpg",
     rating: 4.6,
     distance: "1.8 km",
     pickupTime: "8:00 PM - 9:30 PM",

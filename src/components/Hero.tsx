@@ -13,21 +13,21 @@ const Hero = () => {
   // Sample stores from BrowseStores (use images instead of emojis)
   const sampleStores = [
     {
-      image: "/images/stores/coffee-cup.jpg",
+      image: "./images/stores/coffee-cup.jpg",
       name: "Cafe Giảng",
       shop: "Quán cà phê",
       original: 120000,
       discount: 39000,
     },
     {
-      image: "/images/stores/supermarket-winmart.jpg",
+      image: "./images/stores/supermarket-winmart.jpg",
       name: "Winmart",
       shop: "Siêu thị",
       original: 180000,
       discount: 59000,
     },
         {
-      image: "/images/stores/bakery-croissant.jpg",
+      image: "./images/stores/bakery-croissant.jpg",
       name: "Saint Honoré Hanoi",
       shop: "Tiệm bánh",
       original: 220000,
