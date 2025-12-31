@@ -112,7 +112,7 @@ const Hero = () => {
               <div className="relative flex-1 max-w-md">
                 <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                 {fromPhone && !isEditing ? (
-                  <div className="h-14 flex items-center justify-between px-4 rounded-xl bg-card text-foreground">
+                  <div className="h-14 flex items-center justify-between pl-12 pr-4 text-primary-foreground">
                     <span>Đã đăng ký: <strong>{fromPhone}</strong></span>
                     <button
                       type="button"
@@ -120,7 +120,7 @@ const Hero = () => {
                         setIsEditing(true);
                         setPhoneInput(fromPhone);
                       }}
-                      className="text-sm text-primary hover:underline ml-2"
+                      className="text-sm text-secondary hover:underline ml-2"
                     >
                       Sửa
                     </button>
