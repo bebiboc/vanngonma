@@ -95,9 +95,10 @@ const Hero = () => {
               Sắp ra mắt tại Hà Nội
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight text-balance">
-              Mua túi thực phẩm bất ngờ,{" "}
-              <span className="text-secondary">rẻ hơn đến 70%</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-[1.1] tracking-tight">
+              Mua túi thực phẩm bất ngờ,
+              <br />
+              <span className="text-secondary drop-shadow-sm">rẻ hơn đến 70%</span>
             </h1>
             
             <div className="space-y-4 max-w-lg">
@@ -106,9 +107,9 @@ const Hero = () => {
               </p>
 
               <div className="flex flex-wrap items-center gap-3 text-primary-foreground/80">
-                <p className="text-base md:text-lg leading-relaxed">
+                <span className="text-base md:text-lg leading-relaxed">
                   Mỗi túi chứa thực phẩm ngẫu nhiên — bạn được chọn trước nhóm/loại thực phẩm
-                </p>
+                </span>
                 <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary-foreground/10 backdrop-blur-sm">
                   <Carrot className="w-5 h-5 text-primary-foreground/80" />
                   <Beef className="w-5 h-5 text-primary-foreground/80" />
