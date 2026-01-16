@@ -21,7 +21,7 @@ const Header = () => {
             Khám phá ưu đãi
           </a>
           <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-            Về chúng tôi
+            Tại sao chọn Vẫn Ngon?
           </a>
         </nav>
 

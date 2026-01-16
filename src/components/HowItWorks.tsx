@@ -4,20 +4,23 @@ const steps = [
   {
     icon: Search,
     number: "01",
-    title: "Tìm ưu đãi gần bạn",
-    description: "Khám phá những quán đang có Túi Bất Ngờ với thực phẩm ngon còn dư trong ngày.",
+    title: "Nhận thông báo",
+    description: "Bạn sẽ nhận SMS hoặc Zalo về các quán có thực phẩm ngon còn dư trong ngày.",
+    badge: null,
   },
   {
     icon: CreditCard,
     number: "02",
     title: "Đặt túi bất ngờ",
-    description: "Chọn danh mục bạn thích — Rau củ, Trái cây, Tráng miệng… — rồi thanh toán một khoản thật nhỏ.",
+    description: "Xác nhận tin nhắn và chọn danh mục bạn thích — Thịt, Rau củ, Trái cây, Tráng miệng.",
+    badge: "Miễn phí đơn đầu tiên",
   },
   {
     icon: ShoppingBag,
     number: "03",
     title: "Nhận và thưởng thức",
-    description: "Đến lấy trong khung giờ quy định và mở ra điều bất ngờ thơm ngon đang chờ bạn!",
+    description: "Đến lấy túi thực phẩm tại quán trong khung giờ quy định và mở ra điều bất ngờ thơm ngon đang chờ bạn!",
+    badge: null,
   },
 ];
 
@@ -56,6 +59,12 @@ const HowItWorks = () => {
                   <h3 className="text-2xl font-bold text-foreground mb-4">
                     {step.title}
                   </h3>
+                  
+                  {step.badge && (
+                    <span className="inline-block px-3 py-1 rounded-full bg-secondary/20 text-secondary text-xs font-semibold mb-3">
+                      {step.badge}
+                    </span>
+                  )}
                   
                   <p className="text-muted-foreground leading-relaxed text-base">
                     {step.description}

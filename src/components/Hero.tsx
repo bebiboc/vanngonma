@@ -1,4 +1,4 @@
-import { MapPin, ArrowRight } from "lucide-react";
+import { MapPin, ArrowRight, Carrot, Beef, Apple, Cookie } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -14,25 +14,25 @@ const Hero = () => {
   // Sample stores from BrowseStores (use images instead of emojis)
   const sampleStores = [
     {
-      image: "./images/stores/coffee-cup.jpg",
+      image: "./images/stores/fruit_bread.png",
       name: "Cafe Giảng",
       shop: "Quán cà phê",
-      original: 120000,
-      discount: 39000,
+      original: 110000,
+      discount: 35000,
     },
     {
-      image: "./images/stores/supermarket-winmart.jpg",
+      image: "./images/stores/veggies_box.jpg",
       name: "Winmart",
       shop: "Siêu thị",
-      original: 180000,
-      discount: 59000,
+      original: 240000,
+      discount: 72000,
     },
         {
-      image: "./images/stores/bakery-croissant.jpg",
+      image: "./images/stores/patisserie_multiple.png",
       name: "Saint Honoré Hanoi",
       shop: "Tiệm bánh",
-      original: 220000,
-      discount: 69000,
+      original: 250000,
+      discount: 68000,
     },
   ];
 
@@ -96,23 +96,27 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight text-balance">
-              Thực phẩm ngon,{" "}
+              Mua thực phẩm ngon,{" "}
               <span className="text-secondary">rẻ hơn đến 70%</span>
             </h1>
             
             <div className="space-y-4 max-w-lg">
               <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-                Giải cứu thực phẩm cuối ngày — từ rau, thịt, hoa quả đến bánh ngọt — từ các quán uy tín & đạt chuẩn tại Hà Nội, đồng thời chung tay giảm lãng phí thực phẩm.
+                Giải cứu thực phẩm cuối ngày còn ngon, còn tươi — từ các quán được chọn lọc kỹ lưỡng tại Hà Nội.
               </p>
 
-              <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 border-l-4 border-secondary">
-                <p className="text-base md:text-lg text-primary-foreground font-medium">
-                  🌱 Mỗi túi bất ngờ bạn mua = 1 phần thực phẩm không bị bỏ đi
-                </p>
+              <div className="flex items-center gap-3 text-primary-foreground/70">
+                <div className="flex items-center gap-2">
+                  <Carrot className="w-5 h-5" />
+                  <Beef className="w-5 h-5" />
+                  <Apple className="w-5 h-5" />
+                  <Cookie className="w-5 h-5" />
+                </div>
+                <span className="text-base md:text-lg leading-relaxed">— cùng chung tay giảm lãng phí thực phẩm.</span>
               </div>
 
               <p className="text-base md:text-lg text-primary-foreground/90 leading-relaxed">
-                <strong>Đăng ký ngay</strong> để nhận thông báo qua Zalo khi chúng mình ra mắt thử nghiệm vào cuối tháng 01 năm 2026 — <span className="text-secondary font-semibold">số lượng người dùng giới hạn!</span>
+                <strong>Đăng ký ngay</strong> để được đơn hàng đầu tiên miễn phí khi chúng mình ra mắt vào tháng 02 này — <span className="text-primary-foreground font-bold">giới hạn 100 người đầu tiên!</span>
               </p>
             </div>
 
