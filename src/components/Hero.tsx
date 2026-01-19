@@ -133,6 +133,8 @@ const Hero = () => {
                   </div>
                 ) : (
                   <input
+                    id="hero-phone"
+                    name="phone"
                     type="tel"
                     inputMode="tel"
                     value={phoneInput}

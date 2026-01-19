@@ -204,6 +204,8 @@ const ComingSoon = () => {
                 <div className="relative flex-1">
                   <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                   <input
+                    id="coming-soon-phone"
+                    name="phone"
                     type="tel"
                     inputMode="tel"
                     value={phone}
