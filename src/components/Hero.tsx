@@ -137,6 +137,7 @@ const Hero = () => {
                     name="phone"
                     type="tel"
                     inputMode="tel"
+                    autoComplete="tel"
                     value={phoneInput}
                     onChange={(e) => {
                       // allow only digits and plus at the start

@@ -208,6 +208,7 @@ const ComingSoon = () => {
                     name="phone"
                     type="tel"
                     inputMode="tel"
+                    autoComplete="tel"
                     value={phone}
                     onChange={(e) => {
                       // allow only digits and plus at the start
