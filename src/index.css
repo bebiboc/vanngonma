@@ -1,3 +1,4 @@
+/* Font loaded via preload in index.html for faster above-the-fold paint */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 @tailwind base;
@@ -140,13 +141,14 @@
   }
 
   .page-fade {
-    animation: pageFade 260ms cubic-bezier(.22,.9,.26,1) both;
+    animation: pageFade 200ms cubic-bezier(.22,.9,.26,1) both;
+    animation-delay: 50ms; /* Slight delay so skeleton hides first */
   }
 
   @keyframes pageFade {
     from {
       opacity: 0;
-      transform: translateY(6px);
+      transform: translateY(4px);
     }
     to {
       opacity: 1;
