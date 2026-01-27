@@ -139,7 +139,7 @@ const BrowseStores = () => {
             Xem trước các túi thực phẩm bất ngờ
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            🎁 Đây là ví dụ minh hoạ — mỗi túi là một bất ngờ khác nhau trong ngày
+            🎁 Đây là ví dụ minh hoạ — túi và quán có thể thay đổi
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 import { MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const MESSENGER_LINK = "https://www.facebook.com/messages/t/vanngonvn/";
+const MESSENGER_LINK = "https://m.me/vanngonvn";
 
 const Hero = () => {
   const vnd = new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND", maximumFractionDigits: 0 });
@@ -44,7 +44,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 text-primary-foreground/90 text-sm">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-              Sắp ra mắt tại Hà Nội
+              Ra mắt tháng 02 tại Hà Nội
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight text-balance">
@@ -58,11 +58,11 @@ const Hero = () => {
               </p>
 
               <p className="text-base md:text-lg leading-relaxed text-primary-foreground/80">
-                Mỗi túi chứa thực phẩm ngẫu nhiên — bạn được chọn trước nhóm/loại thực phẩm 🥕🥩🍎🍪
+                Dưới dạng túi bất ngờ — bạn được chọn trước nhóm/loại thực phẩm 🥕🥩🍎🍪
               </p>
 
               <p className="text-base md:text-lg text-primary-foreground/90 leading-relaxed pt-2">
-                <strong>Nhắn tin ngay</strong> để nhận thông tin chi tiết và được ưu đãi đơn hàng đầu tiên miễn phí khi chúng mình ra mắt tháng 02 — <span className="text-primary-foreground font-bold">giới hạn 100 người đầu tiên!</span>
+                <strong>Nhắn tin ngay</strong> để nhận thông tin và được ưu đãi đơn hàng đầu tiên miễn phí khi chúng mình ra mắt tháng 02 — <span className="text-primary-foreground font-bold">giới hạn 100 người đầu tiên!</span>
               </p>
             </div>
 

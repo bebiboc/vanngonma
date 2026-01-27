@@ -2,7 +2,7 @@ import { Leaf, ArrowLeft, Bell, Sparkles, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
-const MESSENGER_LINK = "https://www.facebook.com/messages/t/vanngonvn/";
+const MESSENGER_LINK = "https://m.me/vanngonvn";
 
 const ComingSoon = () => {
   const navigate = useNavigate();

@@ -15,7 +15,7 @@ const Contact = () => {
           <div>
             <h3 className="font-semibold">Messenger</h3>
             <a
-              href="https://www.facebook.com/messages/t/vanngonvn/"
+              href="https://m.me/vanngonvn"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:underline"
